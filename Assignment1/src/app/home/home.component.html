@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="forgot-password.html">Forgot Password</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We provide the best solutions for your needs. Explore our services to know more.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>Discover our wide range of services designed to help you succeed.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email us at support&#64;example.com or call us at +123456789.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Our Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.component.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="fade-in">Welcome to Our Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="forgot-password.html">Forgot Password</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="slide-in">
+                <h2>About Us</h2>
+                <p>We provide the best solutions for your needs. Explore our services to know more.</p>
+            </section>
+            <section id="services" class="slide-in">
+                <h2>Our Services</h2>
+                <p>Discover our wide range of services designed to help you succeed.</p>
+            </section>
+            <section id="contact" class="slide-in">
+                <h2>Contact Us</h2>
+                <p>Email us at support&#64;example.com or call us at +123456789.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Our Website. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".slide-in").each(function (i) {
+                $(this).delay(200 * i).animate({ opacity: 1, marginLeft: "0px" }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
